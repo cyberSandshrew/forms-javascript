@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--        Programming Challenge
+            On Your Own:    2.1
+            Description:
+                        Get user's first name, last name, and school name
+                        Parse the first and last name to get initials
+                        Concatenate initials with school name to create the RESULT
+                        Display RESULT
+                        
+            Created by: Jerry French  
+						csc240
+            Created on: 3/2/2022,
+-->
+<!-- linking my style sheet-->
+<link rel="stylesheet" href="css/style.css"
+
+
+
+<head>
+	<title>D&D Club</title>
+
+	<meta charset="utf-8">
+	</meta>
+</head>
+
+<body>
+
+  <header>
+    <h1> Login Page
+	</h1> 
+	
+	
+  </header>
+
+  <nav>
+  <!-- buttons are fun so here is a  button-->
+    <p><a href="jfrench005_jff.html">Home<a/></p> 
+  </nav>
+
+  
+  <!-- javascript form start-->
+  
+  <center><!-- login and password text boxes + button-->
+  
+  <!-- linking javascript-->
+	<script type="text/JavaScript" src="js/main.js"></script>
+  
+	 <!--<h1>Login</h1>
+		<input type="text" id="username" placeholder="Username">
+<br><br/>
+
+<h1>Password</h1>
+  <input type="text" id="password" placeholder="Password">
+  <br></br>
+  
+  <input type="button" value="Log In" onClick="clicked()">-->
+  
+  
+  
+  <div class="login-page">
+	<div class="form">
+	
+		<form class="register-form">
+			<input type="text" id="firstname" placeholder="First Name"/>
+			<input type="text" id="lastname" placeholder="Last Name"/>
+			<input type="text" id="password" placeholder="Password"/>
+			<input type="text" id="school" placeholder="School Name"/>
+			
+			<button type="button" value="Create" id="create" onClick="createclicked()">Create</button>
+			
+			<p class="message">Already Registerd? <a href='#'>Login</a></p>
+		</form>
+		
+		<form>
+		<form class="login-form">
+			<input type="text" id="username" placeholder="username"/>
+			<input type="text" id="password" placeholder="password"/>
+			
+			<button type="button" value="Log In" id="login" onClick="loginclicked()">Login<button/>
+			
+		<p class="message">Not Registerd? <a href='#'>Register</a></p>
+		</form>
+	
+	</div>
+  
+  </div>
+  
+  
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+	
+	<script>
+		$('.message a').click(function(){
+		$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+  
+  </center>
+
+  <footer>
+      <p>Jerry French, 2/28/2022, csc240</p>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+  </footer> 
+
+
+	
+
+</body>
+
+
+</html>

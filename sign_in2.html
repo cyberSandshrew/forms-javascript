@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--        Programming Challenge
+            On Your Own:    ch. 6
+            Description:
+			Create a html sign-in page for a website. The page should obtain the following information: 
+			the user’s first and last names, street address, city, state, zip code, email address, and phone number. 
+			The phone number should be entered in the form (XXX)XXX-XXXX (where X is a digit). 
+			Validate the phone number entry to ensure that the user has entered 10 digits with the area code in parentheses 
+			and the three-digit extension separated from the last four digits by a hyphen. Save your page as sign_in2.
+			html and be sure to include an appropriate page title.
+                        
+            Created by: Jerry French  
+						csc240
+            Created on: 4/6/2022,
+-->
+<!-- linking my style sheet-->
+<link rel="stylesheet" href="css/style.css"
+
+
+
+<head>
+	<title>Sign_in</title>
+
+	<meta charset="utf-8">
+	</meta>
+</head>
+
+
+
+  <header>
+    <h1> Sign In</h1> 
+	
+	
+  </header>
+
+  <nav>
+  <!-- buttons are fun so here is a  button-->
+    <p><a href=" sign_in2.html">Home<a/></p> 
+  </nav>
+
+  
+  <!-- javascript form start-->
+  
+  <center>
+  
+  <!-- linking javascript-->
+	<script type="text/JavaScript" src="js/main.js"></script>
+  
+  
+	<form id='theForm' action="/action_page.php">
+  <label>Enter Your Name</label><br><br>
+	<input type="text" id="firstname" placeholder="Firstname"/>
+	<input type="text" id="lastname" placeholder="Lastname"/>
+	
+	<br><br>
+	<label>Enter Your Address</label><br><br>
+	<input type="text" id="streetAddress" placeholder="Street Address"/>
+	<input type="text" id="city" placeholder="city"/>
+	
+	<input type="text" id="state" placeholder="State"/>
+	<input type="text" id="zipcode" placeholder="Zip code"/>
+	
+	<br><br>
+	<label>Enter Your Email</label><br><br>
+	<input type="text" id="email" placeholder="Email Address"/>
+<br><br>
+  
+  
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="(123)455-678" pattern="[\(]\d{3}[\)]\d{3}[\-]\d{4}" required><br><br>
+  <small>Format: (123)455-678</small><br><br>
+  <input type="submit" id="Submit" onclick="submitclicked()">
+</form>
+
+</center>
+
+  <footer>
+      <p>Jerry French, 2/28/2022, csc240</p>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+  </footer> 
+
+
+	
+
+</body>
+
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--        Programming Challenge
+            On Your Own:    ch. 6 p2
+            Description:
+			part2
+			Add a username and password to PartA. The username should be between 4 and 20 characters. 
+			The password should be between 4 and 12 characters, contain at least one digit, and 
+			contain at least one uppercase and one lowercase character.
+			Select four special characters and require that the password contain at least one of them. 
+			Save your page as sign_in3.html and be sure to include an appropriate page title.
+                        
+            Created by: Jerry French  
+						csc240
+            Created on: 4/6/2022,
+-->
+<!-- linking my style sheet-->
+<link rel="stylesheet" href="css/style.css"
+
+
+
+<head>
+	<title>Sign_in</title>
+
+	<meta charset="utf-8">
+	</meta>
+</head>
+
+
+
+  <header>
+    <h1> Sign In</h1> 
+	
+	
+  </header>
+
+  <nav>
+  <!-- buttons are fun so here is a  button-->
+    <p><a href=" sign_in2.html">Home<a/></p> 
+  </nav>
+
+  
+  <!-- javascript form start-->
+  
+  <center>
+  
+  <!-- linking javascript-->
+	<script type="text/JavaScript" src="js/main.js"></script>
+  
+  
+	<form id='theForm' action="/action_page.php">
+  <label>Enter Your Name</label><br><br>
+	<input type="text" id="firstname" placeholder="Firstname"/>
+	<input type="text" id="lastname" placeholder="Lastname"/>
+	
+	<br><br>
+	<label>Enter Your Address</label><br><br>
+	<input type="text" id="streetAddress" placeholder="Street Address"/>
+	<input type="text" id="city" placeholder="city"/>
+	
+	<input type="text" id="state" placeholder="State"/>
+	<input type="text" id="zipcode" placeholder="Zip code"/>
+	
+	<br><br>
+	<label>Enter Your Email</label><br><br>
+	<input type="text" id="email" placeholder="Email Address"/>
+<br><br>
+  
+  
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="(123)455-678" pattern="[\(]\d{3}[\)]\d{3}[\-]\d{4}" required><br><br>
+  <small>Format: (123)455-678</small><br><br>
+  
+  
+  
+    
+	<label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" pattern = ".{4,20}" required><br>
+	<small>The username should be between 4 and 20 characters. </small><br><br>
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[$,@,#,%]).{4,12}" required>
+	<br>
+	<small>The password should be between 4 and 12 characters, contain at least one digit,</small><br>
+	<small>and contain at least one uppercase and one lowercase character</small><br>
+	<small>as well as one of the following characters $,@,#,%</small><br>
+
+	<br><br>
+	
+	<input type="submit" id="Submit" onclick="submitclicked()">
+	
+</form>
+
+</center>
+
+  <footer>
+      <p>Jerry French, 2/28/2022, csc240</p>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+  </footer> 
+
+
+	
+
+</body>
+
+
+</html>
